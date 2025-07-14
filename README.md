@@ -101,6 +101,57 @@ salary-prediction-model/
 │ └── salary_train.csv
 ├── requirements.txt
 └── README.md
+import requests
+import json
 
+# IBM Cloud API key
+API_KEY = "#"
+
+# Step 1: Get access token
+token_response = requests.post(
+    'https://iam.cloud.ibm.com/identity/token',
+    data={"apikey": API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'}
+)
+mltoken = token_response.json()["access_token"]
+header = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mltoken}
+
+# Step 2: Define payload for scoring
+payload_scoring = {
+  "input_data": [
+    {
+      "fields": [
+        "ID",
+        "education_level",
+        "years_experience",
+        "job_title",
+        "industry",
+        "location",
+        "company_size",
+        "certifications",
+        "age",
+        "working_hours",
+        "crucial_code"
+      ],
+      "values": [
+        [1, "High School", 12, "Data Scientist", "Education", "New York", "Medium", 1, 48, 52, "XEV156"],
+        [2, "PhD", 17, "Data Scientist", "IT", "New York", "", 0, 39, 34, ""]
+      ]
+    }
+  ]
+}
+# Step 3: Send scoring request
+response_scoring = requests.post(
+    'https://au-syd.ml.cloud.ibm.com/ml/v4/deployments/7a9441ef-95f0-4e36-b98e-b77ca7883232/predictions?version=2021-05-01',
+json=payload_scoring,
+    headers=header
+)
+
+print("Scoring response")
+try:
+    print(response_scoring.json())
+except ValueError:
+    print(response_scoring.text)
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
 
 
