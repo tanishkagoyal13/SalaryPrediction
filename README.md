@@ -75,7 +75,7 @@ AutoAI performed automatic:
 
 AutoAI evaluated 8 pipelines (P1 to P8). Pipeline P4 performed best with the highest explained variance and lowest errors.
 
-![Metric Chart](assets/metric-chart.png)
+![Metric Chart](https://github.com/tanishkagoyal13/SalaryPrediction/raw/main/metric%20chart.png)
 
 ---
 
