@@ -66,8 +66,8 @@ AutoAI performed automatic:
 
 ### 📍 Progress Map
 
-![Progress Map](assets/progress-map.png)
-https://github.com/tanishkagoyal13/SalaryPrediction/raw/main/progress%20map.png
+![Progress Map](https://github.com/tanishkagoyal13/SalaryPrediction/raw/main/progress%20map.png)
+
 
 ---
 
