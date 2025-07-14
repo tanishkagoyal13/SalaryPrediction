@@ -1,0 +1,6 @@
+ibm-watson-machine-learning
+numpy
+scikit-learn
+python-dotenv
+requests
+
