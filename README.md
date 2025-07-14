@@ -1,54 +1,92 @@
 # SalaryPrediction
-# 💼 Salary Prediction Model using IBM Watson AI
+# 💼 Salary Prediction Model using IBM Watson AutoAI
 
-This project is a machine learning-based **Salary Prediction Model** that uses **IBM Watson AI services** to accurately predict the expected salary of an individual based on key personal and professional attributes.
-
-## 🚀 Overview
-
-The model takes in several parameters such as educational background, work experience, job title, industry, and more to predict the salary using IBM Watson's powerful AI/ML capabilities. This model is particularly useful for HR departments, job portals, career counseling services, and individuals wanting to benchmark expected salaries.
-
-## 🧠 Powered By
-
-- [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning)
-- Python (Data processing and model interaction)
-- Pandas, Scikit-learn, etc. (for preprocessing, if any)
-- Flask / Streamlit (for interface, if applicable)
+This project predicts the **salary of an individual** based on various job and personal attributes using IBM Watson AutoAI. The model was trained and deployed on IBM Cloud using XGBoost Regressor with automatic feature engineering, hyperparameter tuning, and evaluation.
 
 ---
 
-## 📊 Input Parameters
+## ✨ Features
 
-The model expects the following features:
-
-| Feature              | Description                                               |
-|----------------------|-----------------------------------------------------------|
-| `ID`                 | Unique identifier for each individual                    |
-| `education_level`    | Highest degree or level of education                     |
-| `years_experience`   | Total number of years of professional experience         |
-| `job_title`          | Current or expected job title                            |
-| `industry`           | Industry the individual is working in                    |
-| `location`           | Geographic location of employment                        |
-| `company_size`       | Size of the company (e.g., small, medium, large)         |
-| `certifications`     | Any professional certifications held                     |
-| `age`                | Age of the individual                                    |
-| `working_hours`      | Average weekly working hours                             |
-| `crucial_code`       | Additional encoded features that impact salary           |
+- 🔍 Predict salary based on multiple input parameters
+- 🤖 Uses IBM Watson AutoAI for automated model building
+- 📊 Model trained on XGBoost Regressor with highest performance
+- 🚀 Deployed online using IBM Watson Machine Learning (cloud-based)
+- 📈 Visual pipeline and evaluation metrics
+- 🔒 API-ready model for real-world prediction use
 
 ---
 
-## 🎯 Goal
+## 🧠 Input Parameters
 
-To predict the **salary** of an individual using IBM Watson's AutoAI or custom model deployment, based on the provided inputs.
+The model takes the following features as input:
+
+| Feature Name        | Description                                         |
+|---------------------|-----------------------------------------------------|
+| `ID`                | Unique identifier for each data entry              |
+| `education_level`   | Level of education (e.g., Bachelor's, Master's)     |
+| `years_experience`  | Total years of professional experience              |
+| `job_title`         | Current job title                                   |
+| `industry`          | Industry of employment (e.g., Tech, Finance)        |
+| `location`          | City/Region where the individual works             |
+| `company_size`      | Size of the organization (e.g., Small, Medium)      |
+| `certifications`    | Number of professional certifications               |
+| `age`               | Age of the individual                               |
+| `working_hours`     | Weekly working hours                                |
+| `crucial_code`      | A categorical code for criticality or job level     |
 
 ---
 
-## 🛠️ How It Works
+## 🎯 Target Variable
 
-1. **Data Collection & Preprocessing**: Input data is cleaned, encoded, and structured for model ingestion.
-2. **Model Integration**: Trained model is deployed using IBM Watson Machine Learning.
-3. **Prediction**: The front-end or script sends the input features to the deployed model and receives the predicted salary.
+- `salary`: The annual salary to be predicted.
 
 ---
 
-## 📁 Project Structure
+## 🛠 Technologies Used
+
+| Component             | Tech |
+|-----------------------|------|
+| ML Model              | XGBoost Regressor |
+| Model Training        | IBM Watson AutoAI |
+| Deployment Platform   | IBM Watson Machine Learning |
+| Programming Language  | Python |
+| Notebook Platform     | Google Colab / Jupyter |
+| Hosting               | IBM Cloud |
+
+---
+
+## 🧬 AutoAI Training Flow
+
+AutoAI performed automatic:
+- Dataset splitting
+- Preprocessing
+- Model and algorithm selection
+- Hyperparameter tuning
+- Pipeline evaluation
+
+### 📍 Progress Map
+
+![Progress Map](assets/progress-map.png)
+
+---
+
+## 📊 Evaluation: Metric Chart
+
+AutoAI evaluated 8 pipelines (P1 to P8). Pipeline P4 performed best with the highest explained variance and lowest errors.
+
+![Metric Chart](assets/metric-chart.png)
+
+---
+
+## 🌐 Relationship Map
+
+A graphical representation of relationships between data, algorithms, pipelines, and transformers.
+
+![Relationship Map](assets/relationship-map.png)
+
+---
+
+## 📂 Project Structure
+
+
 
