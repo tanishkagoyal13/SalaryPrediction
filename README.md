@@ -88,6 +88,19 @@ A graphical representation of relationships between data, algorithms, pipelines,
 ---
 
 ## 📂 Project Structure
+salary-prediction-model/
+├── assets/
+│ ├── progress-map.png
+│ ├── metric-chart.png
+│ └── relationship-map.png
+├── notebooks/
+│ └── SalaryPrediction_AutoAI.ipynb
+├── deployment/
+│ └── Model.py
+├── data/
+│ └── salary_train.csv
+├── requirements.txt
+└── README.md
 
 
 
