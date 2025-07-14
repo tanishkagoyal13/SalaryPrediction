@@ -83,7 +83,7 @@ AutoAI evaluated 8 pipelines (P1 to P8). Pipeline P4 performed best with the hig
 
 A graphical representation of relationships between data, algorithms, pipelines, and transformers.
 
-![Relationship Map](assets/relationship-map.png)
+![Relationship Map](https://github.com/tanishkagoyal13/SalaryPrediction/raw/main/relationship%20map.png)
 
 ---
 
