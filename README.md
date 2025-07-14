@@ -156,6 +156,6 @@ except Exception as e:
 
 ### OUTPUT:
 
-![Output]()
+![Output](https://github.com/tanishkagoyal13/SalaryPrediction/raw/main/OUTPUT.png)
 
 
